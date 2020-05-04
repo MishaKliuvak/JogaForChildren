@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "171014093465",
+    "firebase_url": "https://jogaforchildren.firebaseio.com",
+    "project_id": "jogaforchildren",
+    "storage_bucket": "jogaforchildren.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171014093465:android:a09fab46d0cf83b96c9608",
+        "android_client_info": {
+          "package_name": "com.example.jogaforchildren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171014093465-8cm79b7r19vajqf46aq3hl3l9jjlsf4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jogaforchildren",
+            "certificate_hash": "c5cc64fe21b4964fd089af7b36f314da86ea7b8f"
+          }
+        },
+        {
+          "client_id": "171014093465-1i5mlm9it3qg9di7bj687fssu7iaj98k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgZgnBOQpTpGGE0cVF0bB06mOjy0oABfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171014093465-1i5mlm9it3qg9di7bj687fssu7iaj98k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logoIv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title1"
+            android:text="ЙОГА"
+            style="@style/title_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logoIv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title2"
+            android:text="ДЛЯ ДІТЕЙ"
+            style="@style/title_style"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/title1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Електронна адреса"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/email_ico"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/title2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_ico"
+            android:src="@drawable/email_ico"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/title2"/>
+        <EditText
+            android:id="@+id/edit_text_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@+id/title2"
+            android:layout_toRightOf="@id/email_ico"
+            android:inputType="text"
+            android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/email_ico"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/edit_text_login"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass_ico"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/pass_ico"
+            android:layout_below="@+id/edit_text_login"/>
+
+        <EditText
+            android:id="@+id/edit_text_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_login"
+            android:layout_toRightOf="@id/pass_ico"
+            android:layout_marginTop="25dp"
+            android:paddingRight="125dp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забули пароль?"
+            android:layout_alignParentRight="true"
+            android:id="@+id/forgot"
+            android:layout_below="@id/edit_text_login"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edit_text_pass"
+            android:id="@+id/but"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/first_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/but"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="Ще не маєте аккаунта?"
+            android:id="@+id/desc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:id="@+id/reg_click"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Реєстрація"/>
+
+    </RelativeLayout>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:itemBackground="?attr/colorPrimary"
+    app:itemIconTint="@color/white_40"
+    app:itemTextColor="@color/white_40"
+    app:menu="@menu/bottom_bar_menu"/>
+
+
+</RelativeLayout>
